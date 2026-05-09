@@ -47,3 +47,6 @@ class SearchTestCase(TestCase):
             reverse("taxi:driver-list")
             + "?username=nonexistent")
         self.assertEqual(response.status_code, 200)
+        self.assertQuerySetEqual(response.context["object_list"], [])
+
+
