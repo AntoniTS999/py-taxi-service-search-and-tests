@@ -48,5 +48,3 @@ class SearchTestCase(TestCase):
             + "?username=nonexistent")
         self.assertEqual(response.status_code, 200)
         self.assertQuerySetEqual(response.context["object_list"], [])
-
-
