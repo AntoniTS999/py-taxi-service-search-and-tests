@@ -1,4 +1,3 @@
-from django.contrib.auth.password_validation import password_changed
 from django.test import TestCase
 from taxi.models import Manufacturer
 from django.contrib.auth import get_user_model

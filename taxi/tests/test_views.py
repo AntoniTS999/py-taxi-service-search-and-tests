@@ -1,7 +1,6 @@
 from django.test import TestCase, Client
 from django.urls import reverse
 from django.contrib.auth import get_user_model
-
 from taxi.models import Manufacturer
 
 MANUFACTURER_URL = reverse("taxi:manufacturer-list")
